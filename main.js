@@ -27,3 +27,4 @@ function renderBars(bars) {
         ul.appendChild(li);
     }
 }
+
