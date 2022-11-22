@@ -1,12 +1,111 @@
-li {
-    list-style-type: none ;
-    margin-bottom: 12px;
-    border-radius: 10px;
-    border: black 2px solid;
+body {
+    background-image: url("bar2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     padding: 10px;
-    width: 400px;
+
 }
 
-span {
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+* {
+    font-family: michromaregular;
+}
+
+p {
+    color: white;
+}
+
+
+.headerTitleLogo {
+    width: 50%;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #e63946;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+
+
+
+/* Navbar section & button */
+
+.navBar {
+    width: 20%;
+    height: 15%;
+    background-color: rgba(114, 114, 114, 0.5);
+    border-radius: 20px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar button{
+    width: 130px;
+
+}
+
+button {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255,0.8);
+    color: #000000;
+    transition: all .20s;
+}
+
+button:hover {
+    background-color: rgb(230, 57, 70, 0.5);
+    transform: scale(0.9);
+}
+
+
+
+/* Bar list style */
+
+li {
+    list-style-type: none ;
+    margin: 25px;
+    border-radius: 25px;
+    border: #e63946 2px solid;
+    background-color: rgba(114, 114, 114, 0.5);
+    padding: 10px;
+    width: 60%;
+
     text-decoration-style: solid;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allBarList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@font-face {
+    font-family: 'michromaregular';
+    src: url('fontFamily1/michroma-regular-webfont.woff2') format('woff2'),
+         url('fontFamily1/michroma-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
