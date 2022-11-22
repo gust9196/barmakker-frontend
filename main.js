@@ -30,6 +30,7 @@ function renderBars(bars) {
     }
 }
 
+
 //brugeren skal kunne tilføje en bar til databasen
 
 const createBars = {
@@ -99,6 +100,11 @@ fetch('http://localhost:3000/user/create', {
 
 // Find din bar
 
+/*
+window.open('findbar.html')
+ */
+
+const theWebPage = document.querySelector('main')
 const findBarBtn = document.querySelector('.findBar button')
 
 findBarBtn.addEventListener('click', function () {
@@ -109,12 +115,11 @@ findBarBtn.addEventListener('click', function () {
 
 
 
-
 // Open about ud pop-up
 
 const openAboutUsBtn = document.querySelector(`.aboutUs`)
 const closeAboutUsBtn = document.querySelector(`.closePopUpBtn`)
-const showAboutUsPopUp = document.querySelector(`.aboutUsInfo`)
+const showAboutUsPopUp = document.querySelector(`.aboutUsPopUp`)
 const overlay = document.querySelector(`#overlay`)
 
 openAboutUsBtn.addEventListener

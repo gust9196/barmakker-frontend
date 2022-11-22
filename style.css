@@ -80,7 +80,7 @@ button:hover {
 
 /* About us pop up */
 
-.aboutUsInfo {
+.aboutUsPopUp {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -98,7 +98,7 @@ button:hover {
     font-family: michromaregular;
 }
 
-.aboutUsInfo.active {
+.aboutUsPopUp.active {
     transform: translate(-50%, -50%) scale(1);
 }
 
