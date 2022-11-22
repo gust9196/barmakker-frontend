@@ -30,7 +30,8 @@ p {
     font-size: 20px;
     text-transform: uppercase;
     font-style: italic;
-    color: darkorange;
+    color: #e63946;
+
 
     display: flex;
     justify-content: flex-start;
@@ -47,7 +48,7 @@ h1 {
 .navBar {
     width: 20%;
     height: 15%;
-    background-color: rgba(79, 79, 79, 0.75);
+    background-color: rgba(68, 68, 68, 0.5);
     border-radius: 20px;
     padding: 5px;
 
@@ -67,13 +68,13 @@ button {
     text-transform: uppercase;
     padding: 5px;
     border-radius: 15px;
-    background-color: rgba(0,0,0,0.5);
-    color: darkorange;
+    background-color: rgb(255, 255, 255,0.8);
+    color: #000000;
     transition: all .20s;
 }
 
 button:hover {
-    background-color: rgb(255, 140, 0,0.3);
+    background-color: rgb(230, 57, 70, 0.5);
     transform: scale(0.9);
 }
 
@@ -92,7 +93,7 @@ button:hover {
 }
 
 .welcomeSectionHeadline {
-    color: darkorange;
+    color: #e63946;
     font-size: xx-large;
 }
 
@@ -123,7 +124,7 @@ button:hover {
 /* Favorite bar section  */
 
 .favoriteBar {
-    color: #ff8c00;
+    color: #e63946;
     height: 100vh;
 
     display: flex;
@@ -134,7 +135,7 @@ button:hover {
 }
 
 .favoriteBarHeadline {
-    color: darkorange;
+    color: #e63946;
     font-size: xx-large;
 
     display: flex;
