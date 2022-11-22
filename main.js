@@ -1,3 +1,5 @@
+
+
 fetch('https://barmakker-api.onrender.com/johnny')
     .then(response => response.json())
     .then(function (bars) {
@@ -98,3 +100,34 @@ const findBar = document.querySelector('.findBar button')
 findBar.addEventListener('click', function () {
     alert('hello world')
 })
+
+
+
+
+
+
+
+
+
+// Open about ud pop-up
+
+const openAboutUsBtn = document.querySelector(`.aboutUs`)
+const closeAboutUsBtn = document.querySelector(`.closePopUpBtn`)
+const showAboutUsPopUp = document.querySelector(`.aboutUsInfo`)
+const overlay = document.querySelector(`#overlay`)
+
+openAboutUsBtn.addEventListener
+(`click`, function()
+    {
+        if (showAboutUsPopUp == null) return
+        showAboutUsPopUp.classList.add(`active`)
+        overlay.classList.add(`active`)
+    }
+)
+
+closeAboutUsBtn.addEventListener(`click`, function (){
+    if (showAboutUsPopUp == null) return
+    showAboutUsPopUp.classList.remove(`active`)
+    overlay.classList.remove(`active`)
+})
+

@@ -3,7 +3,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     padding: 10px;
-
 }
 
 header {
@@ -19,11 +18,6 @@ header {
 p {
     color: white;
 }
-
-.beerImg{
-    width: 50px;
-}
-
 
 .headerTitleLogo {
     width: 50%;
@@ -44,11 +38,14 @@ h1 {
 
 
 
+
+
 /* Navbar section & button */
 
 .navBar {
     width: 20%;
     height: 15%;
+
     background-color: rgba(114, 114, 114, 0.5);
     border-radius: 20px;
     padding: 5px;
@@ -60,7 +57,6 @@ h1 {
 .navBar button{
     width: 130px;
 }
-
 
 button {
     font-size: 10px;
@@ -76,6 +72,86 @@ button:hover {
     background-color: rgb(230, 57, 70, 0.5);
     transform: scale(0.9);
 }
+
+
+
+
+
+
+/* About us pop up */
+
+.aboutUsInfo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+
+    border-radius: 15px;
+
+    z-index: 10;
+
+    width: 800px;
+    max-width: 50%;
+    background-color: rgba(114, 114, 114, 0.95);
+
+    font-family: michromaregular;
+}
+
+.aboutUsInfo.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popUpHeader {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popUpTitle {
+    font-size: 1.50rem;
+    font-weight: bold;
+
+    color: #e63946;
+}
+
+.closePopUpBtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.popUpText {
+    padding: 10px 15px;
+    font-size: 1.25rem;
+}
+
+span {
+    color: #e63946;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
 
 
 
@@ -116,6 +192,8 @@ button:hover {
 
     font-size: x-large;
 }
+
+
 
 
 
