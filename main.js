@@ -28,3 +28,66 @@ function renderBars(bars) {
     }
 }
 
+//brugeren skal kunne tilføje en bar til databasen
+
+const createBars = {
+    bar_name: "Frughan",
+    bar_location: "Mulighedsvej",
+    bar_city: "København K",
+    description: "Den første til at gøre det største"
+};
+fetch('http://localhost:3000/bars/create', {
+    method: "POST",
+    body: JSON.stringify(createBars),
+    headers: {
+        "Content-Type": "application/json"
+    }
+})
+    .then((response) => response.json())
+    .then(function (isSuccessfulString) {
+        console.log(isSuccessfulString);
+    });
+
+//Brugeren skal kunne tilføje bar features til deres netop tilføjede bar
+
+const createBarFeatures = {
+    fk_bar_id: 18,
+    opening_hours: "Man-Søn",
+    prices: "Angiv i $ 1-6",
+    games: 1,
+    billiard: 1,
+    smoking_allowed: 1,
+    happy_hour: 1,
+    viser_sport: 1
+};
+fetch('http://localhost:3000/bar_features/create', {
+    method: "POST",
+    body: JSON.stringify(createBarFeatures),
+    headers: {
+        "Content-Type": "application/json"
+    }
+})
+    .then((response) => response.json())
+    .then(function (isSuccessfulString) {
+        console.log(isSuccessfulString);
+    });
+
+// Brugeren skal kunne log-in
+
+const createUser = {
+    user_name: "Ib Langstang",
+    user_email: "Iblangstang@gmail.com",
+
+};
+fetch('http://localhost:3000/user/create', {
+    method: "POST",
+    body: JSON.stringify(createUser),
+    headers: {
+        "Content-Type": "application/json"
+    }
+})
+    .then((response) => response.json())
+    .then(function (isSuccessfulString) {
+        console.log(isSuccessfulString);
+    });
+
