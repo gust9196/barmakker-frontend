@@ -93,16 +93,17 @@ fetch('http://localhost:3000/user/create', {
         console.log(isSuccessfulString);
     });
 
+
+
+
+
 // Find din bar
 
-const findBar = document.querySelector('.findBar button')
+const findBarBtn = document.querySelector('.findBar button')
 
-findBar.addEventListener('click', function () {
-    alert('hello world')
+findBarBtn.addEventListener('click', function () {
+    window.open('findbar.html')
 })
-
-
-
 
 
 
