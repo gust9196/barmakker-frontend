@@ -173,3 +173,11 @@ closeAboutUsBtn.addEventListener(`click`, function (){
     overlay.classList.remove(`active`)
 })
 
+
+// Reload page by clicking on the logo
+
+const reloadPage = document.querySelector('.reloadPage')
+
+reloadPage.addEventListener('click', function (){
+    window.location.reload()
+})
