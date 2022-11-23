@@ -108,23 +108,23 @@ fetch('http://localhost:3000/user/create', {
 
 // About us pop up
 
-const openAboutUsBtn = document.querySelector(`.aboutUs`)
-const closeAboutUsBtn = document.querySelector(`.closePopUpBtn`)
-const showAboutUsPopUp = document.querySelector(`.aboutUsPopUp`)
+const openSignInBtn = document.querySelector(`.signIn`)
+const closeSignInBtn = document.querySelector(`.closePopUpBtn`)
+const showSignInPopUp = document.querySelector(`.signInPopUp`)
 const overlay = document.querySelector(`#overlay`)
 
-openAboutUsBtn.addEventListener
+openSignInBtn.addEventListener
 (`click`, function()
     {
-        if (showAboutUsPopUp == null) return
-        showAboutUsPopUp.classList.add(`active`)
+        if (showSignInPopUp == null) return
+        showSignInPopUp.classList.add(`active`)
         overlay.classList.add(`active`)
     }
 )
 
-closeAboutUsBtn.addEventListener(`click`, function (){
-    if (showAboutUsPopUp == null) return
-    showAboutUsPopUp.classList.remove(`active`)
+closeSignInBtn.addEventListener(`click`, function (){
+    if (showSignInPopUp == null) return
+    showSignInPopUp.classList.remove(`active`)
     overlay.classList.remove(`active`)
 })
 

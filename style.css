@@ -52,15 +52,15 @@ h1 {
 /* Navbar section & button */
 
 .navBar {
-    width: 20%;
-    height: 15%;
+    width: 135px;
+    height: 35px;
 
     background-color: rgba(114, 114, 114, 0.5);
     border-radius: 20px;
     padding: 5px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .navBar button{
@@ -174,7 +174,7 @@ h4 {
 
 /* About us pop up */
 
-.aboutUsPopUp {
+.signInPopUp {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -192,7 +192,7 @@ h4 {
     font-family: michromaregular;
 }
 
-.aboutUsPopUp.active {
+.signInPopUp.active {
     transform: translate(-50%, -50%) scale(1);
 }
 

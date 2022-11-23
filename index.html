@@ -23,12 +23,10 @@
 
         <nav class="navBar">
             <div class="navBarBtn1">
-                <button class="aboutUs"> Om os </button>
-            </div>
-
-            <div class="navBarBtn2">
                 <button class="signIn"> Log in </button>
             </div>
+
+
         </nav>
     </header>
 
@@ -69,16 +67,23 @@
 </main>
 
 
-    <div class="aboutUsPopUp">
+    <div class="signInPopUp">
         <div class="popUpHeader">
-            <div class="popUpTitle"> Om os </div>
+            <div class="popUpTitle"> Log in </div>
             <button class="closePopUpBtn"> &times; </button>
         </div>
         <div class="popUpText">
-            <p> Lavet af 3 af de største </p>
-            <p> Frederik <span> "Frizzy" </span> Zanchetta Kløcker </p>
-            <p> Hans <span> "Hansi" </span> Nielsen </p>
-            <p> Gustav <span> "Guzz-Guzz" </span> ..kan ik lige huske det mellemnavn.. Strandberg </p>
+
+            <form>
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
+
+                <input type="submit" id="signIn" value=" Log in ">
+            </form>
+
         </div>
     </div>
 
