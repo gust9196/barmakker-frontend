@@ -17,16 +17,18 @@
     <header>
         <div class="headerTitleLogo">
             <div class="titleText">
-                <a class="reloadPage" href="index.html"> <h1> BarMakker  </h1> </a>
+                <h1 class="reloadPage"> BarMakker  </h1>
             </div>
         </div>
 
         <nav class="navBar">
             <div class="navBarBtn1">
-                <button class="signIn"> Log in </button>
+                <button class="aboutUs"> Om os </button>
             </div>
 
-
+            <div class="navBarBtn2">
+                <button class="signIn"> Log in </button>
+            </div>
         </nav>
     </header>
 
@@ -43,7 +45,7 @@
         </div>
 
         <div class="findBar">
-            <button class="findBarBtn"> Find din bar nu! </button>
+            <button class="findBarBtn" href="findbar.html"> Find din bar nu! </button>
         </div>
     </div>
 
@@ -66,29 +68,26 @@
 
 </main>
 
+    <div class="allBarList">
+        <ul id="bars"> </ul>
+    </div>
 
-    <div class="signInPopUp">
+
+
+    <div class="aboutUsPopUp">
         <div class="popUpHeader">
-            <div class="popUpTitle"> Log in </div>
+            <div class="popUpTitle"> Om os </div>
             <button class="closePopUpBtn"> &times; </button>
         </div>
         <div class="popUpText">
-
-            <form>
-                <label for="name">Navn:</label>
-                <input type="text" id="name" name="name"><br><br>
-
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email"><br><br>
-
-                <input type="submit" id="signIn" value=" Log in ">
-            </form>
-
+            <p> Lavet af 3 af de største </p>
+            <p> Frederik <span> "Frizzy" </span> Zanchetta Kløcker </p>
+            <p> Hans <span> "Hansi" </span> Nielsen </p>
+            <p> Gustav <span> "Guzz-Guzz" </span> ..kan ik lige huske det mellemnavn.. Strandberg </p>
         </div>
     </div>
 
     <div id="overlay"> </div>
-
 
 
     <script src="main.js"> </script>

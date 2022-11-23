@@ -4,6 +4,7 @@ fetch('https://barmakker-api.onrender.com/johnny')
     .then(response => response.json())
     .then(function (bars) {
         renderBars(bars);
+        filterBars (bars);
     });
 
 function renderBars(bars) {
@@ -29,6 +30,45 @@ function renderBars(bars) {
         ul.appendChild(li);
     }
 }
+
+function filterBars (bars) {
+    const filterBtn = document.querySelector('HER')
+
+    filterBtn.addEventListener('click', function () {
+        const inputElement = document.querySelector('input');
+        const minimumPrice = inputElement.value;
+
+        const filteredBars = [];
+        for (let i = 0; i < bars.length; i++) {
+            const bar = bars[i];
+            debugger;
+            if(parseFloat(bar.price) > parseFloat(minimumPrice)) {
+                filteredBars.push(bar);
+            }
+        }
+
+        const filteredBarsFilter = bars.filter(bar => parseFloat(bar.price) > parseFloat(minimumPrice));
+
+        renderBars(filteredBarsFilter);
+    })
+}
+
+/*
+
+function search () {
+    for (i = 0; i < antesCanvasGlobal.length; i++) {
+        let inputSearch = document.querySelector('#inputSearch').value
+        inputSearch = inputSearch.toLowerCase();
+        if (antesCanvasGlobal[i].innerHTML.includes(inputSearch)) {
+            antesCanvasGlobal[i].style.display = 'none';
+        }
+        else {
+            antesCanvasGlobal[i].style.display = ''
+        }
+    }
+}
+
+ */
 
 
 
@@ -80,9 +120,18 @@ fetch('http://localhost:3000/bar_features/create', {
 
 // Brugeren skal kunne log-in
 
+const nameInput = document.querySelector('#name')
+const emailInput = document.querySelector('#email')
+const createNewUser = document.querySelector('#signIn')
+
+createNewUser.addEventListener('click', function () {
+
+   const name = nameInput.value
+   const email = emailInput.value
+
 const createUser = {
-    user_name: "Ib Langstang",
-    user_email: "Iblangstang@gmail.com",
+    user_name: name,
+    user_email: email,
 
 };
 fetch('http://localhost:3000/user/create', {
@@ -96,7 +145,7 @@ fetch('http://localhost:3000/user/create', {
     .then(function (isSuccessfulString) {
         console.log(isSuccessfulString);
     });
-
+})
 
 
 
