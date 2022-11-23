@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-con" href="favicon.ico">
-    <link rel="stylesheet" href="findbar.css">
+    <link rel="stylesheet" href="style.css">
     <title> BARMAKKER </title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -17,7 +17,7 @@
     <header>
         <div class="headerTitleLogo">
             <div class="titleText">
-                <h1> Barmakker  </h1>
+                <a href="index.html" class="reloadPage" > <h1> Barmakker  </h1> </a>
             </div>
         </div>
 
@@ -38,6 +38,22 @@
         </div>
     </main>
 
-<script src="main.js"></script>
+    <div class="aboutUsPopUp">
+        <div class="popUpHeader">
+            <div class="popUpTitle"> Om os </div>
+            <button class="closePopUpBtn"> &times; </button>
+        </div>
+        <div class="popUpText">
+            <p> Lavet af 3 af de største </p>
+            <p> Frederik <span> "Frizzy" </span> Zanchetta Kløcker </p>
+            <p> Hans <span> "Hansi" </span> Nielsen </p>
+            <p> Gustav <span> "Guzz-Guzz" </span> ..kan ik lige huske det mellemnavn.. Strandberg </p>
+        </div>
+    </div>
+
+    <div id="overlay"> </div>
+
+
+<script src="findBarPage.js"></script>
 </body>
 </html>
