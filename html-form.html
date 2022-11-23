@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form action="/action_page.php">
+    <label for="bar_name">Navn på bar:</label><br>
+    <input type="text" id="bar_name" name="bar_name" value=""><br>
+    <label for="bar_city">Vælg bydel:</label>
+    <br>
+    <select id="bar_city" name="bar_location">
+        <option value="København K">København K</option>
+        <option value="Nørrebro">Nørrebro</option>
+        <option value="Vesterbro">Vesterbro</option>
+        <option value="Østerbro">Østerbro</option>
+    </select>
+    <br>
+
+    <label for="prices">Prisniveau:</label>
+    <br>
+    <select id="prices" name="prices">
+        <option value="$">$</option>
+        <option value="$$">$$</option>
+        <option value="$$$">$$$</option>
+        <option value="$$$$">$$$$</option>
+        <option value="$$$$$">$$$$$</option>
+    </select>
+    <br>
+
+    <label for="bar_location">Adresse på bar:</label><br>
+    <input type="text" id="bar_location" name="bar_location" value=""><br><br>
+
+    <label for="bar_description">Beskrivelse af bar:</label><br>
+    <input type="text" id="bar_description" name="bar_description" value=""><br><br>
+
+    <label for="bar_description">Åbningstider:</label><br>
+    <input type="text" id="opening_hours" name="opening_hours" value=""><br><br>
+
+    <input type="checkbox" id="billiard" name="billiard" value="true">
+    <label for="billiard">Billard</label><br>
+
+    <input type="checkbox" id="smoking_allowed" name="smoking_allowed" value="true">
+    <label for="billiard">Indendørs rygning tilladt</label><br>
+
+    <input type="checkbox" id="happy_hour" name="happy_hour" value="true">
+    <label for="billiard">Happy Hour</label><br>
+
+    <input type="checkbox" id="viser_sport" name="viser_sport" value="true">
+    <label for="billiard">Viser Sport</label><br>
+<br>
+    <label for="fk_bar_id">fk_bar_id (WIP):</label><br>
+    <input type="text" id="fk_bar_id" name="fk_bar_id" value=""><br><br>
+
+    <div>
+
+        <br>
+
+    <input type="submit" value="Indsend bar">
+
+
+</form>
+</body>
+</html>
